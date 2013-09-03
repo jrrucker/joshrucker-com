@@ -101,7 +101,8 @@ i, em{font-style: italic;}
 	width: 61.2%;
 	margin-top: 2em;
 }
-.home #main{
+.home #main,
+.single-featured-image #main{
 	margin-top: 0em;
 }
 
@@ -162,6 +163,10 @@ a.more-link{font-style: italic;}
 
 #main figure.feature-image{
 	border-bottom: 3px double #ccc;
+}
+
+.single-format-standard #main figure.feature-image{
+	border-bottom: 0px;
 }
 
 #main figure.feature-image img{

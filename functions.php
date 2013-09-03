@@ -16,9 +16,24 @@
      *****************************************************************************/
 
      ## Resource: http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' );
+	
+	// Add specific CSS class by filter
+	add_filter('body_class','jr_class_names');
+	function jr_class_names($classes) {
+		
+		if(is_single() && has_post_thumbnail()){
+			$classes[] = 'single-featured-image';
+			return $classes;
+		}
+		
+		return $classes;
+	
+	}
 
-      
+    
+
+
     /*****************************************************************************
      ** ii.   Custom Post Types
      *****************************************************************************/
@@ -189,15 +204,7 @@
 			
 			$query->the_post();
 			
-			$permalink = get_permalink();
-			$postid = get_the_ID();
-			$thumbnail = get_the_post_thumbnail( $postid, 'featured-image');
-			
-			echo '<figure class="feature-image">';
-			echo '<a href="' . $permalink . '">' . $thumbnail . '</a>';
-			echo '<figcaption>' . get_the_content() . '</figcaption>';
-			echo '</figure>';
-			
+			get_template_part('loop','featimage'); 
 		}
 		
 	}

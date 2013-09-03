@@ -5,8 +5,11 @@
 	<!-- feature image (if homepage) -->
 	<?php 
 		$pageNum = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		if(is_home() && $pageNum == 1)
+		if(is_home() && $pageNum == 1){
 			jr_load_featured_image();
+		} elseif(is_single() && has_post_thumbnail()){
+			get_template_part('loop','featimage'); 
+		}
 	?>
 	
 	<!-- Page title (if applicable) -->	
