@@ -16,6 +16,7 @@
      *****************************************************************************/
 
      ## Resource: http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
+	add_theme_support( 'post-thumbnails' ); 
 
       
     /*****************************************************************************
@@ -23,7 +24,46 @@
      *****************************************************************************/
      
      ## Documentation: http://codex.wordpress.org/Post_Types
-      
+
+	function jr_featured_image_post_type(){
+		
+		$labels = array(
+			'name' => 'Featured Images',
+		    'singular_name' => 'Featured Image',
+		    'add_new' => 'Add New',
+		    'add_new_item' => 'Add New Featured Image',
+		    'edit_item' => 'Edit Featured Image',
+		    'new_item' => 'New Featured Image',
+		    'all_items' => 'All Featured Image',
+		    'view_item' => 'View Featured Image',
+		    'search_items' => 'Search Featured Images',
+		    'not_found' =>  'No Featured Image found',
+		    'not_found_in_trash' => 'No Featured Images found in Trash', 
+		    'parent_item_colon' => '',
+		    'menu_name' => 'Featured Images'
+		);
+
+		$args = array(
+		    'labels' => $labels,
+		    'public' => true,
+		    'publicly_queryable' => true,
+		    'show_ui' => true, 
+		    'show_in_menu' => true, 
+		    'query_var' => true,
+		    'rewrite' => array( 'slug' => 'featured-image' ),
+		    'capability_type' => 'post',
+		    'has_archive' => true, 
+		    'hierarchical' => false,
+		    'menu_position' => null,
+		    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+		); 
+
+		register_post_type( 'featured-image', $args );
+		
+	}
+	
+	add_action('init','jr_featured_image_post_type');
+
       
     /*****************************************************************************
      ** iii.  Custom Taxonomies
