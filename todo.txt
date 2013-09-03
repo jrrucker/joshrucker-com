@@ -1,0 +1,5 @@
+- featured images for post types
+- finish about content
+- write 1st post
+- set up editorial calendar
+- custom taxonomy for post format
