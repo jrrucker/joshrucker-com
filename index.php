@@ -3,16 +3,10 @@
 <section id="main" role="main">
 
 	<!-- feature image (if homepage) -->
-	<?php if(is_home()): ?>
-		<figure class="feature-image">
-			<img src="http://farm9.staticflickr.com/8344/8173398261_f345c4c6c8_c.jpg" alt="" />
-			<figcaption>
-				Earth’s future? It’s sure to include rising temperatures, a growing population, 
-				and a dwindling supply of farmable land. Earth’s future? It’s sure to include 
-				rising temperatures, a growing population, and a dwindling supply of farmable land.
-			</figcaption>
-		</figure>
-	<?php endif; ?>
+	<?php 
+		if(is_home())
+			jr_load_featured_image();
+	?>
 	
 	<!-- Page title (if applicable) -->	
 	<?php if(is_search()): ?>

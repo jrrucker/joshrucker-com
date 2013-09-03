@@ -55,7 +55,7 @@
 		    'has_archive' => true, 
 		    'hierarchical' => false,
 		    'menu_position' => null,
-		    'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+		    'supports' => array( 'title', 'editor', 'author', 'excerpt', 'thumbnail', 'comments' )
 		); 
 
 		register_post_type( 'featured-image', $args );
@@ -63,6 +63,7 @@
 	}
 	
 	add_action('init','jr_featured_image_post_type');
+	add_image_size( 'featured-image', 800, 9999 ); //300 pixels wide (and unlimited height)
 
       
     /*****************************************************************************
@@ -175,6 +176,31 @@
 
      }
      
+	function jr_load_featured_image(){
+		
+		$query = new WP_query(
+			array(
+				'post_type' => 'featured-image',
+				'posts_per_page' => 1
+			)
+		);
+		
+		if($query->have_posts()){
+			
+			$query->the_post();
+			
+			$permalink = get_permalink();
+			$postid = get_the_ID();
+			$thumbnail = get_the_post_thumbnail( $postid, 'featured-image');
+			
+			echo '<figure class="feature-image">';
+			echo '<a href="' . $permalink . '">' . $thumbnail . '</a>';
+			echo '<figcaption>' . get_the_content() . '</figcaption>';
+			echo '</figure>';
+			
+		}
+		
+	}
 
     /*****************************************************************************s
      ** v.  Short Codes

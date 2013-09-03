@@ -166,6 +166,7 @@ a.more-link{font-style: italic;}
 
 #main figure.feature-image img{
 	max-width: 100%;
+	height: auto;
 	display: block;
 }
 #main figure.feature-image figcaption{
