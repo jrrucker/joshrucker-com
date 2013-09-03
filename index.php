@@ -4,7 +4,8 @@
 
 	<!-- feature image (if homepage) -->
 	<?php 
-		if(is_home())
+		$pageNum = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		if(is_home() && $pageNum == 1)
 			jr_load_featured_image();
 	?>
 	

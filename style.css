@@ -191,6 +191,10 @@ a.more-link{font-style: italic;}
 	margin-top: 4em;
 }
 
+.paged #main article{
+	margin-top: 6em;
+}
+
 #main article h1,
 #main article h2,
 #main article.excerpt h3,
@@ -425,6 +429,15 @@ a.more-link{font-style: italic;}
 	color: #333;
 }
 
+.pagination{
+	font-size: 1.6em;
+	font-family: "myriad-pro",Verdana,arial,sans-serif;
+	font-weight: normal;
+	text-transform: lowercase;
+	text-align: center;
+	padding: 1.5em 0em;
+	border-top: 1px solid #eee;
+}
 
 /* Sidebar */
 

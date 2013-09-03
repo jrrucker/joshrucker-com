@@ -21,7 +21,13 @@
 		
 	</article>
 		
-<?php endwhile; else: ?>
+<?php endwhile; ?>
+
+<div class="pagination">
+	<?php posts_nav_link('&nbsp; &nbsp;', '&laquo; Newer Posts', 'Older Posts &raquo;'); ?>
+</div>
+
+<?php else: ?>
 	
 	<p class="no-posts"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 	
