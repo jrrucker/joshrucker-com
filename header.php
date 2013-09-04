@@ -3,7 +3,7 @@
 
 	<head>	
 
-		<title><?php bloginfo('name'); ?></title>
+		<title><?php wp_title(' :: ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
 
 		<meta charset="utf-8">
@@ -12,6 +12,13 @@
         <meta name="viewport" content="width=1100" />
         
         <!-- <link type="text/plain" rel="author" href="humans.txt" /> -->
+		<meta name="description" content="<?php
+			if(is_single() || is_page()){
+				echo get_the_excerpt();
+			} else {
+				echo "Josh Rucker writes on web development, life, and things that happen in between.";
+			}
+		?>" />
 
 		<!-- Typekit -->
         <script type="text/javascript" src="//use.typekit.net/meg6qsn.js"></script>
