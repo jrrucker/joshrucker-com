@@ -31,6 +31,34 @@
 	
 	}
 	
+	add_action('wp_head','jr_open_graph');
+	function jr_open_graph(){
+	
+		$site_name = get_bloginfo('name');
+		echo '<meta property="og:site_name" content="'.$site_name.'"/>'.PHP_EOL;
+		
+		if (is_singular()){
+			echo '<meta property="og:title" content="'.get_the_title().'" />'.PHP_EOL;
+			echo '<meta property="og:type" content="article" />'.PHP_EOL;
+			echo '<meta property="og:description" content="' . get_the_excerpt() . '" />'.PHP_EOL;
+			
+			if(has_post_thumbnail()){
+				
+				$src = wp_get_attachment_image_src( 
+					get_post_thumbnail_id($post->ID), 
+					array( 720,405 ), false, '' 
+				);
+				echo '<meta property="og:image" content="'. $src[0] .' "/>'.PHP_EOL;
+			
+			}
+			
+		} else {
+			echo '<meta property="og:description" content="Josh Rucker writes on web development, life, and things that happen in between." />'.PHP_EOL;
+			echo '<meta property="og:type" content="website" />'.PHP_EOL;
+		}
+		echo '<meta property="og:url" content="'. get_permalink() .'" />'.PHP_EOL;
+		
+	}
     
 
 
