@@ -4,11 +4,10 @@
 	
 	<section id="about" aria-label="About the Author" class="clearfix">
 
-		<p>Earth&rsquo;s future? It&rsquo;s sure to include rising temperatures, a growing 
-            population, and a dwindling supply of farmable land.  To thrive in that harsh world, 
-            humans will need a sustainable food source. At NC&nbsp;State, researchers in 
-            biology, computer engineering, and environmental engineering are seeking ways 
-            to bolster crops. <a class="more" href="#">Read&nbsp;More &raquo;</a></p>
+		<p>I’m the senior web developer for the Web Communications team at North 
+			Carolina State University in Raleigh, NC.  This site is a collection
+			of thoughts on web development, life, and the things that happen in 
+			between. <a class="more" href="<?php echo bloginfo('url'); ?>/about/">Read&nbsp;more about me &raquo;</a>
 
     </section><!-- end #about -->
     
