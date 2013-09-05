@@ -4,6 +4,8 @@
 		
 		<h2><?php the_title(); ?></h2>
 		
+		<?php if(!is_page()): ?>
+		
 		<p class="meta">
 			Published on 
 			<?php
@@ -13,6 +15,8 @@
 			<time datetime="<?php echo date("Y-m-d",$timestamp); ?>">
 				<?php echo date("l, F j, Y", $timestamp); ?></time>
 		</p>
+		
+		<?php endif; ?>
 		
 		<?php the_content(); ?>
 		
