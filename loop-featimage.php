@@ -13,13 +13,7 @@
 	
 	$excerpt = get_the_excerpt();
 	
-	if(!is_single()){
-		echo '<figcaption>' . $excerpt . '</figcaption>';
-	}
-	
-	
-	
-	
+	echo '<figcaption>' . $excerpt . '</figcaption>';
 	
 	echo '</figure>';
 
