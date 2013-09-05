@@ -1,5 +1,5 @@
 		<footer id="footer" role="contentinfo">
-			<p>All content copyright &copy; 2013 <strong><a href="#">Josh Rucker</a></strong> unless otherwise attributed.</p>
+			<p>All content copyright &copy; 2013 <strong><a href="http://www.joshrucker.com">Josh Rucker</a></strong> unless otherwise attributed.</p>
 		</footer>
 
 	</div><!-- end #wrapper -->
