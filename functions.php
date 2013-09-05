@@ -60,7 +60,10 @@
 		
 	}
     
-
+	add_action( 'init', 'jr_page_excerpt' );
+	function jr_page_excerpt() {
+		add_post_type_support( 'page', 'excerpt' );
+	}
 
     /*****************************************************************************
      ** ii.   Custom Post Types
