@@ -249,5 +249,22 @@
 
      ## Docuementation: http://codex.wordpress.org/Shortcode_API
 
+	function jr_youtube_shortcode( $atts ) {
+		
+		extract( shortcode_atts( array(
+			'id' => ''
+		), $atts ) );
+		
+		$output = "<div class=\"video-youtube\">";
+		$output .= "<iframe frameborder=\"0\" allowfullscreen=\"\"";  	 
+		$output .= "src=\"http://www.youtube.com/embed/";
+		$output .= $id;
+		$output .= "?showinfo=0&amp;rel=0\"></iframe>";
+		$output .= "</div>";
+		
+		return $output;
+	}
+	add_shortcode( 'youtube', 'jr_youtube_shortcode' );
+
 
 ?>
