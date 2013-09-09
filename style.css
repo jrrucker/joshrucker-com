@@ -101,7 +101,8 @@ i, em{font-style: italic;}
 	margin-top: 2em;
 }
 .home #main,
-.single-featured-image #main{
+.single-featured-image #main,
+.page-featured-image #main{
 	margin-top: 0em;
 }
 

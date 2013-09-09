@@ -25,10 +25,13 @@
 		if(is_single() && has_post_thumbnail()){
 			$classes[] = 'single-featured-image';
 			return $classes;
+		} elseif(is_page() && has_post_thumbnail()){
+			$classes[] = 'page-featured-image';
+			return $classes;
 		}
 		
 		return $classes;
-	
+		
 	}
 	
 	add_action('wp_head','jr_open_graph');
