@@ -1,4 +1,3 @@
-- set up editorial calendar
-- add featured image support on pages
 - clean up headers (titles should always be h2s, first subhead should be h3)
-- Update margin off figures for different views (single featured image larger than others)
+- Update margin of figures for different views (single featured image larger than others)
+- refactor styles (oocss)
