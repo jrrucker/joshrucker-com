@@ -2,3 +2,4 @@
 - Update margin of figures for different views (single featured image larger than others)
 - refactor styles (oocss)
 - add twitter to sidebar
+- media queries (responsive styles)
