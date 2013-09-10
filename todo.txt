@@ -2,3 +2,5 @@
 - refactor styles (oocss)
 - add twitter to sidebar
 - media queries (responsive styles)
+- add comments template
+- favicon
