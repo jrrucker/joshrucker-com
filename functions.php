@@ -263,7 +263,7 @@
 		$output .= "?showinfo=0&amp;rel=0\"></iframe>";
 		$output .= "</div>";
 		
-		if($content !== null){
+		if(!empty($content)){
 			$output .= "<p class=\"wp-caption-text\">" . $content . "</p>";
 		}
 		
