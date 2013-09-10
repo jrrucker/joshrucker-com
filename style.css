@@ -165,10 +165,6 @@ a.more-link{font-style: italic;}
 	border-bottom: 3px double #ccc;
 }
 
-.single-format-standard #main figure.feature-image{
-	border-bottom: 0px;
-}
-
 #main figure.feature-image img{
 	max-width: 100%;
 	height: auto;
@@ -248,7 +244,7 @@ a.more-link{font-style: italic;}
 	height: 0px;
 	width: 100%;
 	padding-bottom: 56.2%;
-	margin: 2em 0em;
+	margin: 3em 0em;
 	
 }
 
@@ -761,10 +757,6 @@ a.more-link{font-style: italic;}
 
 #main figure.feature-image{
 	border-bottom: 3px double #ccc;
-}
-
-.single-format-standard #main figure.feature-image{
-	border-bottom: 0px;
 }
 
 #main figure.feature-image img{
