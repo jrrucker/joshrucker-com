@@ -247,19 +247,26 @@
      ** v.  Short Codes
      *****************************************************************************/
 
-     ## Docuementation: http://codex.wordpress.org/Shortcode_API
+     ## Documentation: http://codex.wordpress.org/Shortcode_API
 
-	function jr_youtube_shortcode( $atts ) {
+	function jr_youtube_shortcode( $atts, $content = null ) {
 		
 		extract( shortcode_atts( array(
 			'id' => ''
 		), $atts ) );
 		
-		$output = "<div class=\"video-youtube\">";
+		$output .= "<div class=\"video\">";
+		$output .= "<div class=\"video-wrapper\">";
 		$output .= "<iframe frameborder=\"0\" allowfullscreen=\"\"";  	 
 		$output .= "src=\"http://www.youtube.com/embed/";
 		$output .= $id;
 		$output .= "?showinfo=0&amp;rel=0\"></iframe>";
+		$output .= "</div>";
+		
+		if($content !== null){
+			$output .= "<p class=\"wp-caption-text\">" . $content . "</p>";
+		}
+		
 		$output .= "</div>";
 		
 		return $output;

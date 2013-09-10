@@ -239,16 +239,18 @@ a.more-link{font-style: italic;}
 
 /* YouTube */
 
-#main article .video-youtube{
+#main article .video{
+	margin: 3em 0em;
+}
+
+#main article .video-wrapper{
 	position: relative;
 	height: 0px;
 	width: 100%;
 	padding-bottom: 56.2%;
-	margin: 3em 0em;
-	
 }
 
-#main article .video-youtube iframe{
+#main article .video-wrapper iframe{
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -285,7 +287,7 @@ a.more-link{font-style: italic;}
 	font-size: 1.4em;
 	font-style: italic;
 	color: #666;
-	border-left: 5px solid #cc0000;
+	border-left: 5px solid #000;
 	padding-left: 1em;
 	margin-top: 0px;
 	margin-bottom: 0px;
