@@ -4,7 +4,7 @@
 	<head>	
 
 		<title><?php wp_title(' :: ', true, 'right'); ?><?php bloginfo('name'); ?></title>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/_css/main.css" />
 
 		<meta charset="utf-8">
         <meta content="General" name="rating"/>

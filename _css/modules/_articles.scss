@@ -1,0 +1,282 @@
+#main article{
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+#main article.first{
+	margin-top: 2.5em;
+}
+
+#main article.full{
+	margin-top: 4em;
+}
+
+.paged #main article{
+	margin-top: 6em;
+}
+
+#main article h1,
+#main article h2,
+#main article.excerpt h3,
+#main h2.page-title{
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	font-size: 3.5em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+#main h2.page-title{
+	margin-top: 1.14285714285714em;
+	border-bottom: 3px double #ccc;
+	padding-bottom: 0.6em;
+}
+
+#main article.full h3{
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	font-size: 1.8em;
+	line-height: 1.5em;
+	margin: 1em 0em;
+	color: #333;
+}
+
+#main article h4,
+#main article h5,
+#main article h6{
+	font-size: 1.6em;
+	margin: 1em 0em;
+	font-style: italic;
+	color: #999;
+}
+
+#main article h2 a{
+	color: #333;
+}
+#main article h2 a:hover{
+	text-decoration: none;
+	color: #cc0000;
+}
+
+/* YouTube */
+
+#main article .video{
+	margin: 3em 0em;
+}
+
+#main article .video-wrapper{
+	position: relative;
+	height: 0px;
+	width: 100%;
+	padding-bottom: 56.2%;
+}
+
+#main article .video-wrapper iframe{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Images */
+
+#main article img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+#main article .alignleft{
+	float: left;
+	margin: 0em 1.5em 1em 0em;
+	padding-top: .35em;
+}
+
+#main article .alignright{
+	float: right;
+	margin: 0em 0em 1em 1.5em;
+	padding-top: .35em;
+}
+
+#main article .aligncenter{
+	margin: 1em auto;
+}
+
+#main article p.wp-caption-text{
+	font-family: "myriad-pro",Verdana,arial,sans-serif;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 100;
+	color: #666;
+	border-left: 5px solid #cc0000;
+	padding-left: 1em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+/* Lists */
+
+#main article dl{
+	margin: 1.5em 0em;
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
+#main article dl dt{
+	font-weight: 400;
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+#main article dl dd{
+	margin-bottom: 1.5em;
+	font-style: italic;
+}
+
+#main article ul,
+#main article ol{
+	padding-left: 3em;
+	padding-right: 3em;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	margin: 1.5em 0em;
+}
+
+#main article ul ul,
+#main article ol ol{
+	font-size: 1em;
+}
+
+#main article ul ul li{
+	list-style: circle;
+}
+
+#main article ol ol li{
+	list-style: lower-alpha;
+}
+
+#main article ul ul ul li{
+	list-style: disc;
+}
+
+#main article ol ol ol li{
+	list-style: lower-roman;
+}
+
+#main article ul li{
+	list-style: disc;
+}
+
+#main article ol li{
+	list-style: decimal;
+}
+
+/* Paragraphs */
+
+#main article p{
+	font-size: 1.6em;
+	line-height: 1.5em;
+	color: #666;
+	margin: 1.5em 0em;
+}
+
+#main blockquote{
+	padding-left: 3em;
+	border-left: 1px solid #eee;
+	padding-right: 3em;
+}
+
+#main blockquote p{
+	font-size: 1.6em;
+}
+
+#main p cite{
+	color: #333;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#main article p a.more{
+	font-style: italic;
+}
+
+#main q{font-style: italic;}
+
+/* Tables */
+
+#main table{
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	margin: 3em 0em;
+	width: 100%;
+}
+
+#main table th, #main table td{
+	padding: .5em;
+	font-size: 1.6em;
+	text-align: left;
+}
+
+#main table th{
+	background: #333; 
+	color: #fff;
+}
+
+#main address{
+	font-size: 1.6em;
+	line-height: 1.5em;
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+}
+
+#main code, 
+#main kbd,
+#main pre,
+#main tt{
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	color: #000;
+	background: #f6f6f6;
+}
+
+#main pre{
+	padding: 1.5em;
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	line-height: 1.5em;
+	font-size: 1.6em;
+}
+
+#main sub{
+	position: relative;
+	top: .2em;
+}
+
+#main sup{
+	position: relative;
+	bottom: .4em;
+}
+
+/* Meta Content */
+
+#main article p.meta {
+	margin-bottom: 2em;
+	margin-top: 0px;
+	font-style: italic;
+	color: #999;
+	font-size: 1.6em;
+}
+
+#main article p.meta time{
+	font-style: normal;
+	font-weight: bold;
+	color: #333;
+}
+
+.pagination{
+	font-size: 1.6em;
+	font-family: "myriad-pro",Verdana,arial,sans-serif;
+	font-weight: normal;
+	text-transform: lowercase;
+	text-align: center;
+	padding: 1.5em 0em;
+	border-top: 1px solid #eee;
+}

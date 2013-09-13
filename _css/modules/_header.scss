@@ -1,0 +1,32 @@
+#header{
+	font-size: 1em;
+	padding: 6em 0em 4em 0em;
+	margin: 0px auto;
+	background: url("") no-repeat center;
+	background-size: cover;
+}
+
+#header h1{
+	vertical-align: baseline;
+}
+
+#header h1 a{
+	font-weight: 100; 
+	font-size: 3.5em;
+	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+	color: #333;
+	line-height: 1.5em;
+}
+#header h1 a span{
+	font-weight: 400;
+}
+
+#header h1 a span.hide{
+	font-weight: 100;
+	display: none;
+}
+
+#header h1 a:hover{
+	text-decoration: none;
+	color: #cc0000;	
+}

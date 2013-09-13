@@ -1,0 +1,525 @@
+/* line 17, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../Users/ifiamblue/Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 1, modules/_layout.scss */
+#wrapper {
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 3em auto 0px auto;
+  max-width: 1000px;
+  min-width: 800px;
+  background: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); }
+
+/* line 12, modules/_layout.scss */
+#side-column {
+  width: 30%;
+  float: left; }
+
+/* line 17, modules/_layout.scss */
+#main {
+  float: right;
+  width: 61.2%;
+  margin-top: 2em; }
+
+/* line 25, modules/_layout.scss */
+.home #main,
+.single-featured-image #main,
+.page-featured-image #main {
+  margin-top: 0em; }
+
+/* line 29, modules/_layout.scss */
+#about {
+  padding-bottom: 3em;
+  margin-bottom: 3em; }
+
+/* line 1, modules/_base.scss */
+body {
+  font-size: 62.5%;
+  color: #333;
+  font-family: "freight-text-pro","Times New Roman", serif;
+  background: white url("_img/bg.png"); }
+
+/* line 8, modules/_base.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 12, modules/_base.scss */
+i, em {
+  font-style: italic; }
+
+/* line 16, modules/_base.scss */
+a {
+  text-decoration: none;
+  color: #cc0000; }
+
+/* line 21, modules/_base.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 25, modules/_base.scss */
+a.more-link {
+  font-style: italic; }
+
+/* line 1, modules/_header.scss */
+#header {
+  font-size: 1em;
+  padding: 6em 0em 4em 0em;
+  margin: 0px auto;
+  background: url("") no-repeat center;
+  background-size: cover; }
+
+/* line 9, modules/_header.scss */
+#header h1 {
+  vertical-align: baseline; }
+
+/* line 13, modules/_header.scss */
+#header h1 a {
+  font-weight: 100;
+  font-size: 3.5em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  color: #333;
+  line-height: 1.5em; }
+
+/* line 20, modules/_header.scss */
+#header h1 a span {
+  font-weight: 400; }
+
+/* line 24, modules/_header.scss */
+#header h1 a span.hide {
+  font-weight: 100;
+  display: none; }
+
+/* line 29, modules/_header.scss */
+#header h1 a:hover {
+  text-decoration: none;
+  color: #cc0000; }
+
+/* line 1, modules/_navigation.scss */
+#nav {
+  display: block;
+  margin-top: 3em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif; }
+
+/* line 6, modules/_navigation.scss */
+#nav li {
+  margin-right: 2em;
+  display: inline-block;
+  font-size: 1.4em; }
+
+/* line 1, modules/_articles.scss */
+#main article {
+  margin-bottom: 1em;
+  overflow: hidden; }
+
+/* line 6, modules/_articles.scss */
+#main article.first {
+  margin-top: 2.5em; }
+
+/* line 10, modules/_articles.scss */
+#main article.full {
+  margin-top: 4em; }
+
+/* line 14, modules/_articles.scss */
+.paged #main article {
+  margin-top: 6em; }
+
+/* line 21, modules/_articles.scss */
+#main article h1,
+#main article h2,
+#main article.excerpt h3,
+#main h2.page-title {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  font-weight: normal; }
+
+/* line 28, modules/_articles.scss */
+#main h2.page-title {
+  margin-top: 1.14285714285714em;
+  border-bottom: 3px double #ccc;
+  padding-bottom: 0.6em; }
+
+/* line 34, modules/_articles.scss */
+#main article.full h3 {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin: 1em 0em;
+  color: #333; }
+
+/* line 44, modules/_articles.scss */
+#main article h4,
+#main article h5,
+#main article h6 {
+  font-size: 1.6em;
+  margin: 1em 0em;
+  font-style: italic;
+  color: #999; }
+
+/* line 51, modules/_articles.scss */
+#main article h2 a {
+  color: #333; }
+
+/* line 54, modules/_articles.scss */
+#main article h2 a:hover {
+  text-decoration: none;
+  color: #cc0000; }
+
+/* YouTube */
+/* line 61, modules/_articles.scss */
+#main article .video {
+  margin: 3em 0em; }
+
+/* line 65, modules/_articles.scss */
+#main article .video-wrapper {
+  position: relative;
+  height: 0px;
+  width: 100%;
+  padding-bottom: 56.2%; }
+
+/* line 72, modules/_articles.scss */
+#main article .video-wrapper iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+/* Images */
+/* line 82, modules/_articles.scss */
+#main article img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/* line 88, modules/_articles.scss */
+#main article .alignleft {
+  float: left;
+  margin: 0em 1.5em 1em 0em;
+  padding-top: .35em; }
+
+/* line 94, modules/_articles.scss */
+#main article .alignright {
+  float: right;
+  margin: 0em 0em 1em 1.5em;
+  padding-top: .35em; }
+
+/* line 100, modules/_articles.scss */
+#main article .aligncenter {
+  margin: 1em auto; }
+
+/* line 104, modules/_articles.scss */
+#main article p.wp-caption-text {
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 100;
+  color: #666;
+  border-left: 5px solid #cc0000;
+  padding-left: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: .5em;
+  padding-bottom: .5em; }
+
+/* Lists */
+/* line 120, modules/_articles.scss */
+#main article dl {
+  margin: 1.5em 0em;
+  font-size: 1.6em;
+  line-height: 1.5em; }
+
+/* line 126, modules/_articles.scss */
+#main article dl dt {
+  font-weight: 400;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  margin-bottom: .5em;
+  font-weight: bold; }
+
+/* line 133, modules/_articles.scss */
+#main article dl dd {
+  margin-bottom: 1.5em;
+  font-style: italic; }
+
+/* line 139, modules/_articles.scss */
+#main article ul,
+#main article ol {
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin: 1.5em 0em; }
+
+/* line 148, modules/_articles.scss */
+#main article ul ul,
+#main article ol ol {
+  font-size: 1em; }
+
+/* line 152, modules/_articles.scss */
+#main article ul ul li {
+  list-style: circle; }
+
+/* line 156, modules/_articles.scss */
+#main article ol ol li {
+  list-style: lower-alpha; }
+
+/* line 160, modules/_articles.scss */
+#main article ul ul ul li {
+  list-style: disc; }
+
+/* line 164, modules/_articles.scss */
+#main article ol ol ol li {
+  list-style: lower-roman; }
+
+/* line 168, modules/_articles.scss */
+#main article ul li {
+  list-style: disc; }
+
+/* line 172, modules/_articles.scss */
+#main article ol li {
+  list-style: decimal; }
+
+/* Paragraphs */
+/* line 178, modules/_articles.scss */
+#main article p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  color: #666;
+  margin: 1.5em 0em; }
+
+/* line 185, modules/_articles.scss */
+#main blockquote {
+  padding-left: 3em;
+  border-left: 1px solid #eee;
+  padding-right: 3em; }
+
+/* line 191, modules/_articles.scss */
+#main blockquote p {
+  font-size: 1.6em; }
+
+/* line 195, modules/_articles.scss */
+#main p cite {
+  color: #333;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 201, modules/_articles.scss */
+#main article p a.more {
+  font-style: italic; }
+
+/* line 205, modules/_articles.scss */
+#main q {
+  font-style: italic; }
+
+/* Tables */
+/* line 209, modules/_articles.scss */
+#main table {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  margin: 3em 0em;
+  width: 100%; }
+
+/* line 215, modules/_articles.scss */
+#main table th, #main table td {
+  padding: .5em;
+  font-size: 1.6em;
+  text-align: left; }
+
+/* line 221, modules/_articles.scss */
+#main table th {
+  background: #333;
+  color: #fff; }
+
+/* line 226, modules/_articles.scss */
+#main address {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif; }
+
+/* line 235, modules/_articles.scss */
+#main code,
+#main kbd,
+#main pre,
+#main tt {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  color: #000;
+  background: #f6f6f6; }
+
+/* line 241, modules/_articles.scss */
+#main pre {
+  padding: 1.5em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  line-height: 1.5em;
+  font-size: 1.6em; }
+
+/* line 248, modules/_articles.scss */
+#main sub {
+  position: relative;
+  top: .2em; }
+
+/* line 253, modules/_articles.scss */
+#main sup {
+  position: relative;
+  bottom: .4em; }
+
+/* Meta Content */
+/* line 260, modules/_articles.scss */
+#main article p.meta {
+  margin-bottom: 2em;
+  margin-top: 0px;
+  font-style: italic;
+  color: #999;
+  font-size: 1.6em; }
+
+/* line 268, modules/_articles.scss */
+#main article p.meta time {
+  font-style: normal;
+  font-weight: bold;
+  color: #333; }
+
+/* line 274, modules/_articles.scss */
+.pagination {
+  font-size: 1.6em;
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 1.5em 0em;
+  border-top: 1px solid #eee; }
+
+/* line 1, modules/_figures.scss */
+#main figure.feature-image {
+  border-bottom: 3px double #ccc; }
+
+/* line 5, modules/_figures.scss */
+#main figure.feature-image img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/* line 10, modules/_figures.scss */
+#main figure.feature-image figcaption {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  margin: 1.5em 0em;
+  font-weight: 100; }
+
+/* line 1, modules/_forms.scss */
+#search-box {
+  background: #eee;
+  margin-bottom: 4.5em;
+  position: relative; }
+
+/* line 7, modules/_forms.scss */
+#search-box label {
+  display: none; }
+
+/* line 9, modules/_forms.scss */
+#search-box input {
+  background: none;
+  border: none;
+  padding: 8px;
+  font-size: 1.4em;
+  color: #666;
+  display: inline;
+  vertical-align: top; }
+
+/* line 18, modules/_forms.scss */
+#search-box input[type="image"] {
+  padding: 0px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 22px;
+  width: 22px; }
+
+/* line 1, modules/_asides.scss */
+#sidebar h2 {
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-weight: normal;
+  font-size: 1.6em;
+  margin-bottom: 2em; }
+
+/* line 8, modules/_asides.scss */
+#sidebar p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-weight: 100; }
+
+/* line 1, modules/_footer.scss */
+#footer {
+  clear: both;
+  margin-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-weight: 100;
+  border-top: 1px solid #eee;
+  width: 100%;
+  margin: 0px auto; }
+
+/* line 13, modules/_footer.scss */
+#footer p {
+  font-size: 1.6em;
+  line-height: 1.5em; }
+
+/* line 18, modules/_footer.scss */
+#footer p strong {
+  font-weight: normal; }

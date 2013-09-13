@@ -1,0 +1,27 @@
+body{
+	font-size: 62.5%; 
+	color: #333; 
+	font-family: "freight-text-pro","Times New Roman", serif;
+	background: #fff url("_img/bg.png");
+}
+
+b, strong{
+	font-weight: bold;
+}
+
+i, em{
+	font-style: italic;
+}
+
+a{
+	text-decoration: none; 
+	color: #cc0000;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a.more-link{
+	font-style: italic;
+}
