@@ -121,6 +121,30 @@ a:hover {
 a.more-link {
   font-style: italic; }
 
+/* line 1, modules/_typography.scss */
+h1, h2, h3 {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  font-weight: normal; }
+
+/* line 8, modules/_typography.scss */
+h2.page-title {
+  margin-top: 1.14285714285714em;
+  border-bottom: 3px double #ccc;
+  padding-bottom: 0.6em; }
+
+/* line 14, modules/_typography.scss */
+h4, h5, h6 {
+  font-size: 1.6em;
+  margin: 1em 0em;
+  font-style: italic;
+  color: #999; }
+
+/* line 22, modules/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #333; }
+
 /* line 1, modules/_header.scss */
 .heading-branding {
   font-weight: 100;
@@ -151,77 +175,231 @@ a.more-link {
   font-size: 1.4em; }
 
 /* line 1, modules/_articles.scss */
-#main article {
+.article, .article-full {
   margin-bottom: 1em;
   overflow: hidden; }
+  /* line 6, modules/_articles.scss */
+  .article.first, .first.article-full {
+    margin-top: 2.5em; }
 
-/* line 6, modules/_articles.scss */
-#main article.first {
-  margin-top: 2.5em; }
-
-/* line 10, modules/_articles.scss */
-#main article.full {
+/* line 12, modules/_articles.scss */
+.article-full {
   margin-top: 4em; }
-
-/* line 14, modules/_articles.scss */
-.paged #main article {
-  margin-top: 6em; }
-
-/* line 21, modules/_articles.scss */
-#main article h1,
-#main article h2,
-#main article.excerpt h3,
-#main h2.page-title {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  font-size: 3.5em;
-  line-height: 1.5em;
-  font-weight: normal; }
+  /* line 18, modules/_articles.scss */
+  .article-full h3 {
+    font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin: 1em 0em;
+    color: #333; }
 
 /* line 28, modules/_articles.scss */
-#main h2.page-title {
-  margin-top: 1.14285714285714em;
-  border-bottom: 3px double #ccc;
-  padding-bottom: 0.6em; }
+.paged .article, .paged .article-full {
+  margin-top: 6em; }
 
-/* line 34, modules/_articles.scss */
-#main article.full h3 {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  font-size: 1.8em;
-  line-height: 1.5em;
-  margin: 1em 0em;
-  color: #333; }
-
-/* line 44, modules/_articles.scss */
-#main article h4,
-#main article h5,
-#main article h6 {
-  font-size: 1.6em;
-  margin: 1em 0em;
-  font-style: italic;
-  color: #999; }
-
-/* line 51, modules/_articles.scss */
-#main article h2 a {
-  color: #333; }
-
-/* line 54, modules/_articles.scss */
-#main article h2 a:hover {
+/* line 32, modules/_articles.scss */
+.article-heading a:hover {
   text-decoration: none;
   color: #cc0000; }
 
+/* Lists */
+/* line 39, modules/_articles.scss */
+.article dl, .article-full dl {
+  margin: 1.5em 0em;
+  font-size: 1.6em;
+  line-height: 1.5em; }
+
+/* line 45, modules/_articles.scss */
+.article dt, .article-full dt {
+  font-weight: 400;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  margin-bottom: .5em;
+  font-weight: bold; }
+
+/* line 52, modules/_articles.scss */
+.article dd, .article-full dd {
+  margin-bottom: 1.5em;
+  font-style: italic; }
+
+/* line 58, modules/_articles.scss */
+.article ul, .article-full ul,
+.article ol,
+.article-full ol {
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin: 1.5em 0em; }
+
+/* line 67, modules/_articles.scss */
+.article ul ul, .article-full ul ul,
+.article ol ol,
+.article-full ol ol {
+  font-size: 1em; }
+
+/* line 71, modules/_articles.scss */
+.article ul ul li, .article-full ul ul li {
+  list-style: circle; }
+
+/* line 75, modules/_articles.scss */
+.article ol ol li, .article-full ol ol li {
+  list-style: lower-alpha; }
+
+/* line 79, modules/_articles.scss */
+.article ul ul ul li, .article-full ul ul ul li {
+  list-style: disc; }
+
+/* line 83, modules/_articles.scss */
+.article ol ol ol li, .article-full ol ol ol li {
+  list-style: lower-roman; }
+
+/* line 87, modules/_articles.scss */
+.article ul li, .article-full ul li {
+  list-style: disc; }
+
+/* line 91, modules/_articles.scss */
+.article ol li, .article-full ol li {
+  list-style: decimal; }
+
+/* Paragraphs */
+/* line 97, modules/_articles.scss */
+.article p, .article-full p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  color: #666;
+  margin: 1.5em 0em; }
+
+/* line 104, modules/_articles.scss */
+.article blockquote, .article-full blockquote {
+  padding-left: 3em;
+  border-left: 1px solid #eee;
+  padding-right: 3em; }
+
+/* line 110, modules/_articles.scss */
+.article blockquote p, .article-full blockquote p {
+  font-size: 1.6em; }
+
+/* line 114, modules/_articles.scss */
+.article cite, .article-full cite {
+  color: #333;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 120, modules/_articles.scss */
+.article a.more, .article-full a.more {
+  font-style: italic; }
+
+/* line 124, modules/_articles.scss */
+.article q, .article-full q {
+  font-style: italic; }
+
+/* line 126, modules/_articles.scss */
+#main address {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif; }
+
+/* line 135, modules/_articles.scss */
+#main code,
+#main kbd,
+#main pre,
+#main tt {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  color: #000;
+  background: #f6f6f6; }
+
+/* line 141, modules/_articles.scss */
+#main pre {
+  padding: 1.5em;
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  line-height: 1.5em;
+  font-size: 1.6em; }
+
+/* line 148, modules/_articles.scss */
+#main sub {
+  position: relative;
+  top: .2em; }
+
+/* line 153, modules/_articles.scss */
+#main sup {
+  position: relative;
+  bottom: .4em; }
+
+/* Meta Content */
+/* line 160, modules/_articles.scss */
+p.article-date {
+  margin-bottom: 2em;
+  margin-top: 0px;
+  font-style: italic;
+  color: #999;
+  font-size: 1.6em; }
+
+/* line 168, modules/_articles.scss */
+p.article-date time {
+  font-style: normal;
+  font-weight: bold;
+  color: #333; }
+
+/* line 174, modules/_articles.scss */
+.pagination {
+  font-size: 1.6em;
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 1.5em 0em;
+  border-top: 1px solid #eee; }
+
+/* Tables */
+/* line 3, modules/_tables.scss */
+table {
+  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  margin: 3em 0em;
+  width: 100%; }
+
+/* line 9, modules/_tables.scss */
+th, td {
+  padding: .5em;
+  font-size: 1.6em;
+  text-align: left; }
+
+/* line 15, modules/_tables.scss */
+th {
+  background: #333;
+  color: #fff; }
+
+/* line 1, modules/_media.scss */
+#main figure.feature-image {
+  border-bottom: 3px double #ccc; }
+
+/* line 5, modules/_media.scss */
+#main figure.feature-image img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/* line 10, modules/_media.scss */
+#main figure.feature-image figcaption {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  margin: 1.5em 0em;
+  font-weight: 100; }
+
 /* YouTube */
-/* line 61, modules/_articles.scss */
+/* line 21, modules/_media.scss */
 #main article .video {
   margin: 3em 0em; }
 
-/* line 65, modules/_articles.scss */
+/* line 25, modules/_media.scss */
 #main article .video-wrapper {
   position: relative;
   height: 0px;
   width: 100%;
   padding-bottom: 56.2%; }
 
-/* line 72, modules/_articles.scss */
+/* line 32, modules/_media.scss */
 #main article .video-wrapper iframe {
   position: absolute;
   top: 0px;
@@ -230,29 +408,29 @@ a.more-link {
   height: 100%; }
 
 /* Images */
-/* line 82, modules/_articles.scss */
+/* line 42, modules/_media.scss */
 #main article img {
   max-width: 100%;
   height: auto;
   display: block; }
 
-/* line 88, modules/_articles.scss */
+/* line 48, modules/_media.scss */
 #main article .alignleft {
   float: left;
   margin: 0em 1.5em 1em 0em;
   padding-top: .35em; }
 
-/* line 94, modules/_articles.scss */
+/* line 54, modules/_media.scss */
 #main article .alignright {
   float: right;
   margin: 0em 0em 1em 1.5em;
   padding-top: .35em; }
 
-/* line 100, modules/_articles.scss */
+/* line 60, modules/_media.scss */
 #main article .aligncenter {
   margin: 1em auto; }
 
-/* line 104, modules/_articles.scss */
+/* line 64, modules/_media.scss */
 #main article p.wp-caption-text {
   font-family: "myriad-pro",Verdana,arial,sans-serif;
   font-size: 1.4em;
@@ -265,189 +443,6 @@ a.more-link {
   margin-bottom: 0px;
   padding-top: .5em;
   padding-bottom: .5em; }
-
-/* Lists */
-/* line 120, modules/_articles.scss */
-#main article dl {
-  margin: 1.5em 0em;
-  font-size: 1.6em;
-  line-height: 1.5em; }
-
-/* line 126, modules/_articles.scss */
-#main article dl dt {
-  font-weight: 400;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  margin-bottom: .5em;
-  font-weight: bold; }
-
-/* line 133, modules/_articles.scss */
-#main article dl dd {
-  margin-bottom: 1.5em;
-  font-style: italic; }
-
-/* line 139, modules/_articles.scss */
-#main article ul,
-#main article ol {
-  padding-left: 3em;
-  padding-right: 3em;
-  font-size: 1.6em;
-  line-height: 1.5em;
-  margin: 1.5em 0em; }
-
-/* line 148, modules/_articles.scss */
-#main article ul ul,
-#main article ol ol {
-  font-size: 1em; }
-
-/* line 152, modules/_articles.scss */
-#main article ul ul li {
-  list-style: circle; }
-
-/* line 156, modules/_articles.scss */
-#main article ol ol li {
-  list-style: lower-alpha; }
-
-/* line 160, modules/_articles.scss */
-#main article ul ul ul li {
-  list-style: disc; }
-
-/* line 164, modules/_articles.scss */
-#main article ol ol ol li {
-  list-style: lower-roman; }
-
-/* line 168, modules/_articles.scss */
-#main article ul li {
-  list-style: disc; }
-
-/* line 172, modules/_articles.scss */
-#main article ol li {
-  list-style: decimal; }
-
-/* Paragraphs */
-/* line 178, modules/_articles.scss */
-#main article p {
-  font-size: 1.6em;
-  line-height: 1.5em;
-  color: #666;
-  margin: 1.5em 0em; }
-
-/* line 185, modules/_articles.scss */
-#main blockquote {
-  padding-left: 3em;
-  border-left: 1px solid #eee;
-  padding-right: 3em; }
-
-/* line 191, modules/_articles.scss */
-#main blockquote p {
-  font-size: 1.6em; }
-
-/* line 195, modules/_articles.scss */
-#main p cite {
-  color: #333;
-  font-style: italic;
-  font-weight: bold; }
-
-/* line 201, modules/_articles.scss */
-#main article p a.more {
-  font-style: italic; }
-
-/* line 205, modules/_articles.scss */
-#main q {
-  font-style: italic; }
-
-/* Tables */
-/* line 209, modules/_articles.scss */
-#main table {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  margin: 3em 0em;
-  width: 100%; }
-
-/* line 215, modules/_articles.scss */
-#main table th, #main table td {
-  padding: .5em;
-  font-size: 1.6em;
-  text-align: left; }
-
-/* line 221, modules/_articles.scss */
-#main table th {
-  background: #333;
-  color: #fff; }
-
-/* line 226, modules/_articles.scss */
-#main address {
-  font-size: 1.6em;
-  line-height: 1.5em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif; }
-
-/* line 235, modules/_articles.scss */
-#main code,
-#main kbd,
-#main pre,
-#main tt {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  color: #000;
-  background: #f6f6f6; }
-
-/* line 241, modules/_articles.scss */
-#main pre {
-  padding: 1.5em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
-  line-height: 1.5em;
-  font-size: 1.6em; }
-
-/* line 248, modules/_articles.scss */
-#main sub {
-  position: relative;
-  top: .2em; }
-
-/* line 253, modules/_articles.scss */
-#main sup {
-  position: relative;
-  bottom: .4em; }
-
-/* Meta Content */
-/* line 260, modules/_articles.scss */
-#main article p.meta {
-  margin-bottom: 2em;
-  margin-top: 0px;
-  font-style: italic;
-  color: #999;
-  font-size: 1.6em; }
-
-/* line 268, modules/_articles.scss */
-#main article p.meta time {
-  font-style: normal;
-  font-weight: bold;
-  color: #333; }
-
-/* line 274, modules/_articles.scss */
-.pagination {
-  font-size: 1.6em;
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
-  font-weight: normal;
-  text-transform: lowercase;
-  text-align: center;
-  padding: 1.5em 0em;
-  border-top: 1px solid #eee; }
-
-/* line 1, modules/_figures.scss */
-#main figure.feature-image {
-  border-bottom: 3px double #ccc; }
-
-/* line 5, modules/_figures.scss */
-#main figure.feature-image img {
-  max-width: 100%;
-  height: auto;
-  display: block; }
-
-/* line 10, modules/_figures.scss */
-#main figure.feature-image figcaption {
-  font-size: 1.4em;
-  line-height: 1.5em;
-  color: #666;
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
-  margin: 1.5em 0em;
-  font-weight: 100; }
 
 /* line 1, modules/_forms.scss */
 .form-search {

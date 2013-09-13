@@ -3,11 +3,11 @@
 
 	<?php $cnt++; ?>
 		
-	<article class="excerpt<?php if($cnt == 1){ echo " first"; } ?>">
+	<article class="article<?php if($cnt == 1){ echo " first"; } ?>">
 		
-		<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h3 class="article-heading"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 		
-		<p class="meta">
+		<p class="article-date">
 			Published on 
 			<?php
 				$postDate = get_the_date();

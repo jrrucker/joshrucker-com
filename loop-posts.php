@@ -1,12 +1,12 @@
 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>
 
-	<article class="full">
+	<article class="article-full<?php if($cnt == 1){ echo " first"; } ?>">
 		
-		<h2><?php the_title(); ?></h2>
+		<h2 class="article-heading"><?php the_title(); ?></h2>
 		
 		<?php if(!is_page()): ?>
 		
-		<p class="meta">
+		<p class="article-date">
 			Published on 
 			<?php
 				$postDate = get_the_date();
