@@ -36,7 +36,7 @@
 					
 				<header id="header" role="banner">
 				
-	                <h1><a href="<?php bloginfo("home"); ?>">Joshua <span class="hide">Ryan</span> <span>Rucker</span></a></h1>
+	                <h1 class="heading-branding"><a href="<?php bloginfo("home"); ?>">Joshua <b>Rucker</b></a></h1>
 				
 	            </header><!-- end #header -->
 
