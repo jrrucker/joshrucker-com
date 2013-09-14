@@ -1,7 +1,15 @@
+// font stacks
+
+$display-font-family: 	"myriad-pro-condensed",Verdana,arial,sans-serif;
+$primary-font-family: 	"myriad-pro",Verdana,arial,sans-serif;
+$text-font-family: 		"freight-text-pro","Times New Roman", serif;
+
+// base element styles
+
 body{
 	font-size: 62.5%; 
 	color: #333; 
-	font-family: "freight-text-pro","Times New Roman", serif;
+	font-family: $text-font-family;
 	background: #fff url("../_img/bg.png");
 }
 
@@ -12,6 +20,8 @@ b, strong{
 i, em{
 	font-style: italic;
 }
+
+// anchors
 
 a{
 	text-decoration: none; 
@@ -24,4 +34,30 @@ a:hover{
 
 a.more-link{
 	font-style: italic;
+}
+
+// headings 
+
+h1, h2, h3{
+	font-family: $display-font-family;
+	font-size: 3.5em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+h2.page-title{
+	margin-top: 1.14285714285714em;
+	border-bottom: 3px double #ccc;
+	padding-bottom: 0.6em;
+}
+
+h4, h5, h6{
+	font-size: 1.6em;
+	margin: 1em 0em;
+	font-style: italic;
+	color: #999;
+}
+
+h1, h2, h3, h4, h5, h6{
+	a{color: #333;}
 }

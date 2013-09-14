@@ -93,55 +93,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 3em;
   margin-bottom: 3em; }
 
-/* line 1, modules/_base.scss */
+/* line 9, modules/_base.scss */
 body {
   font-size: 62.5%;
   color: #333;
-  font-family: "freight-text-pro","Times New Roman", serif;
+  font-family: "freight-text-pro", "Times New Roman", serif;
   background: white url("../_img/bg.png"); }
 
-/* line 8, modules/_base.scss */
+/* line 16, modules/_base.scss */
 b, strong {
   font-weight: bold; }
 
-/* line 12, modules/_base.scss */
+/* line 20, modules/_base.scss */
 i, em {
   font-style: italic; }
 
-/* line 16, modules/_base.scss */
+/* line 26, modules/_base.scss */
 a {
   text-decoration: none;
   color: #cc0000; }
 
-/* line 21, modules/_base.scss */
+/* line 31, modules/_base.scss */
 a:hover {
   text-decoration: underline; }
 
-/* line 25, modules/_base.scss */
+/* line 35, modules/_base.scss */
 a.more-link {
   font-style: italic; }
 
-/* line 1, modules/_typography.scss */
+/* line 41, modules/_base.scss */
 h1, h2, h3 {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   font-size: 3.5em;
   line-height: 1.5em;
   font-weight: normal; }
 
-/* line 8, modules/_typography.scss */
+/* line 48, modules/_base.scss */
 h2.page-title {
   margin-top: 1.14285714285714em;
   border-bottom: 3px double #ccc;
   padding-bottom: 0.6em; }
 
-/* line 14, modules/_typography.scss */
+/* line 54, modules/_base.scss */
 h4, h5, h6 {
   font-size: 1.6em;
   margin: 1em 0em;
   font-style: italic;
   color: #999; }
 
-/* line 22, modules/_typography.scss */
+/* line 62, modules/_base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333; }
 
@@ -149,7 +149,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .heading-branding {
   font-weight: 100;
   font-size: 3.5em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   line-height: 1.5em; }
   /* line 8, modules/_header.scss */
   .heading-branding > a {
@@ -175,7 +175,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   margin-top: 4em; }
   /* line 18, modules/_articles.scss */
   .article-full h3 {
-    font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+    font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
     font-size: 1.8em;
     line-height: 1.5em;
     margin: 1em 0em;
@@ -200,7 +200,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* line 45, modules/_articles.scss */
 .article dt, .article-full dt {
   font-weight: 400;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   margin-bottom: .5em;
   font-weight: bold; }
 
@@ -285,21 +285,21 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 #main address {
   font-size: 1.6em;
   line-height: 1.5em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif; }
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif; }
 
 /* line 135, modules/_articles.scss */
 #main code,
 #main kbd,
 #main pre,
 #main tt {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   color: #000;
   background: #f6f6f6; }
 
 /* line 141, modules/_articles.scss */
 #main pre {
   padding: 1.5em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   line-height: 1.5em;
   font-size: 1.6em; }
 
@@ -340,7 +340,7 @@ p.article-date time {
 
 /* line 1, modules/_tables.scss */
 table {
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   margin: 3em 0em;
   width: 100%; }
 
@@ -370,7 +370,7 @@ th {
   font-size: 1.4em;
   line-height: 1.5em;
   color: #666;
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-family: "myriad-pro", Verdana, arial, sans-serif;
   margin: 1.5em 0em;
   font-weight: 100; }
 
@@ -419,7 +419,7 @@ th {
 
 /* line 64, modules/_media.scss */
 #main article p.wp-caption-text {
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: 100;
@@ -458,17 +458,17 @@ th {
       width: 22px; }
 
 /* line 1, modules/_asides.scss */
-#sidebar h2 {
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
+.sidebar-section > h2 {
+  margin-bottom: 2em;
+  font-family: "myriad-pro", Verdana, arial, sans-serif;
   font-weight: normal;
-  font-size: 1.6em;
-  margin-bottom: 2em; }
+  font-size: 1.6em; }
 
 /* line 8, modules/_asides.scss */
-#sidebar p {
+.sidebar-section > p {
   font-size: 1.5em;
   line-height: 1.5em;
-  font-family: "myriad-pro",Verdana,arial,sans-serif;
+  font-family: "myriad-pro", Verdana, arial, sans-serif;
   font-weight: 100; }
 
 /* line 1, modules/_footer.scss */
@@ -477,7 +477,7 @@ th {
   margin-bottom: 3em;
   padding-top: 3em;
   padding-bottom: 3em;
-  font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
+  font-family: "myriad-pro-condensed", Verdana, arial, sans-serif;
   font-weight: 100;
   border-top: 1px solid #eee;
   width: 100%;

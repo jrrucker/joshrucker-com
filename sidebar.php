@@ -2,7 +2,7 @@
 	
 	<?php get_search_form(); ?>
 	
-	<section id="about" aria-label="About the Author" class="clearfix">
+	<section class="sidebar-section" id="about" aria-label="About the Author" class="clearfix">
 
 		<p>I’m the senior web developer for the Web Communications team at North 
 			Carolina State University in Raleigh, NC.  This site is a collection
