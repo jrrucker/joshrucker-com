@@ -10,11 +10,11 @@
 	margin: 0px auto;
 }
 
-#footer p{
+#footer > p{
 	font-size: 1.6em;
 	line-height: 1.5em;
 }
 
-#footer p strong{
+#footer > p > strong{
 	font-weight: normal;
 }
