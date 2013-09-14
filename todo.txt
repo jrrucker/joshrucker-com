@@ -1,5 +1,3 @@
-- Update margin of figures for different views (single featured image larger than others)
-- refactor styles (smacss), add SASS & Compass
 - media queries (responsive styles)
 - add twitter to sidebar
 - add comments template
