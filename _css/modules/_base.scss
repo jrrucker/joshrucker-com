@@ -52,12 +52,65 @@ h2.page-title{
 }
 
 h4, h5, h6{
-	font-size: 1.6em;
 	margin: 1em 0em;
+	font-size: 1.6em;
 	font-style: italic;
 	color: #999;
 }
 
 h1, h2, h3, h4, h5, h6{
 	a{color: #333;}
+}
+
+// text
+
+p{
+	margin: 1.5em 0em;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	color: #666;
+}
+
+blockquote{
+	padding-left: 3em;
+	padding-right: 3em;
+	border-left: 1px solid #eee;
+}
+
+cite{
+	font-style: italic;
+	font-weight: bold;
+	color: #333;
+}
+
+q{
+	font-style: italic;
+}
+
+address{
+	font-size: 1.6em;
+	line-height: 1.5em;
+	font-family: $display-font-family;
+}
+
+code, kbd, pre, tt{
+	font-family: $display-font-family;
+	color: #000;
+	background: #f6f6f6;
+}
+
+pre{
+	padding: 1.5em;
+	line-height: 1.5em;
+	font-size: 1.6em;
+}
+
+sub{
+	position: relative;
+	top: .2em;
+}
+
+sup{
+	position: relative;
+	bottom: .4em;
 }

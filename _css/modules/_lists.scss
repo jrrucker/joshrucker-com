@@ -1,0 +1,55 @@
+dl, ul, ol{
+	font-size: 1.6em;
+	margin: 1.5em 0em;
+	line-height: 1.5em;
+}
+
+ul, ol{
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+ul li{
+	list-style: disc;
+}
+
+ol li{
+	list-style: decimal;
+}
+
+.nested-one,
+.nested-two{
+	font-size: 1em;
+}
+
+.nested-one{
+	font-size: 1em;
+}
+
+ul.nested-one li{
+	list-style: circle;
+}
+
+ul.nested-two li{
+	list-style: disc;
+}
+
+ol.nested-one li{
+	list-style: lower-alpha;
+}
+
+ol.nested-two li{
+	list-style: lower-roman;
+}
+
+dt{
+	margin-bottom: .5em;
+	font-weight: 400;
+	font-family: $display-font-family;
+	font-weight: bold;
+}
+
+dd{
+	margin-bottom: 1.5em;
+	font-style: italic;
+}

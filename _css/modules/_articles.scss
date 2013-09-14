@@ -7,6 +7,10 @@
 		margin-top: 2.5em;
 	}
 	
+	a.more{
+		font-style: italic;
+	}
+	
 }
 
 .article-full{
@@ -34,149 +38,17 @@
 	color: #cc0000;
 }
 
-/* Lists */
-
-.article dl{
-	margin: 1.5em 0em;
-	font-size: 1.6em;
-	line-height: 1.5em;
-}
-
-.article dt{
-	font-weight: 400;
-	font-family: $display-font-family;
-	margin-bottom: .5em;
-	font-weight: bold;
-}
-
-.article dd{
-	margin-bottom: 1.5em;
-	font-style: italic;
-}
-
-.article ul,
-.article ol{
-	padding-left: 3em;
-	padding-right: 3em;
-	font-size: 1.6em;
-	line-height: 1.5em;
-	margin: 1.5em 0em;
-}
-
-.article ul ul,
-.article ol ol{
-	font-size: 1em;
-}
-
-.article ul ul li{
-	list-style: circle;
-}
-
-.article ol ol li{
-	list-style: lower-alpha;
-}
-
-.article ul ul ul li{
-	list-style: disc;
-}
-
-.article ol ol ol li{
-	list-style: lower-roman;
-}
-
-.article ul li{
-	list-style: disc;
-}
-
-.article ol li{
-	list-style: decimal;
-}
-
-/* Paragraphs */
-
-.article p{
-	font-size: 1.6em;
-	line-height: 1.5em;
-	color: #666;
-	margin: 1.5em 0em;
-}
-
-.article blockquote{
-	padding-left: 3em;
-	border-left: 1px solid #eee;
-	padding-right: 3em;
-}
-
-.article blockquote p{
-	font-size: 1.6em;
-}
-
-.article cite{
-	color: #333;
-	font-style: italic;
-	font-weight: bold;
-}
-
-.article a.more{
-	font-style: italic;
-}
-
-.article q{font-style: italic;}
-
-#main address{
-	font-size: 1.6em;
-	line-height: 1.5em;
-	font-family: $display-font-family;
-}
-
-#main code, 
-#main kbd,
-#main pre,
-#main tt{
-	font-family: $display-font-family;
-	color: #000;
-	background: #f6f6f6;
-}
-
-#main pre{
-	padding: 1.5em;
-	font-family: $display-font-family;
-	line-height: 1.5em;
-	font-size: 1.6em;
-}
-
-#main sub{
-	position: relative;
-	top: .2em;
-}
-
-#main sup{
-	position: relative;
-	bottom: .4em;
-}
-
-/* Meta Content */
-
-p.article-date {
+.article-date {
 	margin-bottom: 2em;
 	margin-top: 0px;
 	font-style: italic;
+	font-size: 1.6em;
 	color: #999;
-	font-size: 1.6em;
+	> time{
+		font-style: normal;
+		font-weight: bold;
+		color: #333;
+	}
 }
 
-p.article-date time{
-	font-style: normal;
-	font-weight: bold;
-	color: #333;
-}
 
-.pagination{
-	font-size: 1.6em;
-	font-family: "myriad-pro",Verdana,arial,sans-serif;
-	font-weight: normal;
-	text-transform: lowercase;
-	text-align: center;
-	padding: 1.5em 0em;
-	border-top: 1px solid #eee;
-}
