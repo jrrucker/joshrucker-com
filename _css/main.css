@@ -338,20 +338,19 @@ p.article-date time {
   padding: 1.5em 0em;
   border-top: 1px solid #eee; }
 
-/* Tables */
-/* line 3, modules/_tables.scss */
+/* line 1, modules/_tables.scss */
 table {
   font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
   margin: 3em 0em;
   width: 100%; }
 
-/* line 9, modules/_tables.scss */
+/* line 7, modules/_tables.scss */
 th, td {
   padding: .5em;
   font-size: 1.6em;
   text-align: left; }
 
-/* line 15, modules/_tables.scss */
+/* line 13, modules/_tables.scss */
 th {
   background: #333;
   color: #fff; }
