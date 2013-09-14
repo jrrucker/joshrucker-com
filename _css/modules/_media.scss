@@ -1,76 +1,73 @@
-#main figure.feature-image{
+.feature-image{
+	> figcaption{
+		margin: 1.5em 0em;
+		font-family: $primary-font-family;
+		font-weight: 100;
+		font-size: 1.4em;
+		line-height: 1.5em;
+		color: #666;
+	}
+}
+
+figure.feature-image{
+	margin: 0px;
 	border-bottom: 3px double #ccc;
 }
 
-#main figure.feature-image img{
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-#main figure.feature-image figcaption{
-	font-size: 1.4em;
-	line-height: 1.5em;
-	color: #666;
-	font-family: $primary-font-family;
-	margin: 1.5em 0em;
-	font-weight: 100;
-}
+/* Videos */
 
-/* YouTube */
-
-#main article .video{
+.video{
 	margin: 3em 0em;
 }
 
-#main article .video-wrapper{
+.video-wrapper{
 	position: relative;
+	padding-bottom: 56.2%;
 	height: 0px;
 	width: 100%;
-	padding-bottom: 56.2%;
-}
-
-#main article .video-wrapper iframe{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
+	> iframe{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 /* Images */
 
-#main article img{
+img{
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
 
-#main article .alignleft{
+.alignleft{
 	float: left;
 	margin: 0em 1.5em 1em 0em;
 	padding-top: .35em;
 }
 
-#main article .alignright{
+.alignright{
 	float: right;
 	margin: 0em 0em 1em 1.5em;
 	padding-top: .35em;
 }
 
-#main article .aligncenter{
-	margin: 1em auto;
+.aligncenter{
+	margin: 0em auto 1em auto;
 }
 
-#main article p.wp-caption-text{
+p.wp-caption-text{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-left: 5px solid #cc0000;
 	font-family: $display-font-family;
 	font-size: 1.4em;
 	font-style: italic;
 	font-weight: 100;
 	color: #666;
-	border-left: 5px solid #cc0000;
-	padding-left: 1em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-top: .5em;
-	padding-bottom: .5em;
 }
