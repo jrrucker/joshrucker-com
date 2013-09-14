@@ -152,15 +152,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
   line-height: 1.5em; }
   /* line 8, modules/_header.scss */
-  .heading-branding b {
-    font-weight: 400; }
-  /* line 12, modules/_header.scss */
-  .heading-branding a {
+  .heading-branding > a {
     color: #333; }
-    /* line 14, modules/_header.scss */
-    .heading-branding a:hover {
+    /* line 12, modules/_header.scss */
+    .heading-branding > a:hover {
       text-decoration: none;
       color: #c00; }
+    /* line 17, modules/_header.scss */
+    .heading-branding > a > b {
+      font-weight: 400; }
 
 /* line 1, modules/_navigation.scss */
 #nav {

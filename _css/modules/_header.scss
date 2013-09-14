@@ -5,16 +5,19 @@
 	font-family: "myriad-pro-condensed",Verdana,arial,sans-serif;
 	line-height: 1.5em;
 	
-	b{
-		font-weight: 400;
-	}
-	
-	a{
+	> a{
+		
 		color: #333;
+		
 		&:hover{
 			text-decoration: none;
 			color: #c00;
 		}
+		
+		> b{
+			font-weight: 400;
+		}
+		
 	}
 
 }
