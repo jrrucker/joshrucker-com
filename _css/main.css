@@ -450,10 +450,10 @@ th {
   margin-bottom: 4.5em;
   position: relative; }
   /* line 7, modules/_forms.scss */
-  .form-search label {
+  .form-search > label {
     display: none; }
   /* line 13, modules/_forms.scss */
-  .form-search input {
+  .form-search > input {
     background: none;
     border: none;
     padding: 8px;
@@ -462,7 +462,7 @@ th {
     display: inline;
     vertical-align: top; }
     /* line 23, modules/_forms.scss */
-    .form-search input[type="image"] {
+    .form-search > input[type="image"] {
       padding: 0px;
       position: absolute;
       right: 5px;
