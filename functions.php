@@ -128,12 +128,12 @@
 
      ## FYI: http://codex.wordpress.org/Functions_File_Explained
      
-     function ncsu_show_feed( $source = "", $cnt = 5 , $class = "" ){
+  	function jr_show_feed( $source = "", $cnt = 5 , $class = "" ){
 
-         if(!empty($source)){
+		if(!empty($source)){
 
-         	// content of feed 
-         	$feedContent = "";
+        	// content of feed 
+			$feedContent = "";
 
          	// create curl object and set options
          	if(strlen($feedContent) < 1){
@@ -178,52 +178,95 @@
 
          	}        
 
-         }
+        }
 
-     }
+    }
      
-     function ncsu_show_twitter( $handle = "ncstate" , $cnt = 5 ){
+    function jr_show_twitter( $handle = "ifiamblue" , $cnt = 3 ){
+         
+        $path = WP_CONTENT_DIR . "/twitter.txt";
+        $serializedStatuses = jr_load_cache($path,(60*60));
+        
+        if($serializedStatuses !== false){
+             
+        	$statuses = json_decode($serializedStatuses);
 
-         // json source
-         $source = "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=$handle&count=$cnt";
+        } else {
+	
+			require_once('_includes/twitteroauth/twitteroauth/twitteroauth.php');
+		 	require_once('_includes/twitteroauth/config.php');
 
-       	$curl = curl_init();
-     	curl_setopt($curl, CURLOPT_URL,$source);
-     	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-     	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 0);
+     	    $oauth_token = "19710733-32ZL9NBxFdcQfqFxPAqQwVGR7Fo3FjYGC42Zv9PEN";
+         	$oauth_token_secret = "irBInt9KNyv9kuFuzxj3b8anfCsfiXerP0kCguUs";
+         	$twitterUser = "ifiamblue";
 
-     	// load xml object from curl execution
-     	$twitterSource = curl_exec($curl);
-     	curl_close($curl);
+			$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
+			$statuses = $connection->get('statuses/user_timeline', array('screen_name' => $handle, 'count' => $cnt));
+             
+            $serializedStatuses = $statuses;
+            
+            jr_write_cache($path,json_encode($statuses));
+         
+        }
+         
+		echo "<div class=\"tweet-list\"><ul>";
 
-     	$twitterObj = json_decode($twitterSource);
+     	foreach($statuses as $status){
 
-     	if(count($twitterObj) < 1)
-     	    return;
+			if($cnt-- > 0){
 
-        echo "<ul>";
+    			$text = $status->text;
 
-     	foreach($twitterObj as $status){
+	     	    // check for links
+	     	    foreach($status->entities->urls as $l){
+	     	        $url = $l->url;
+	     	        $replace = "<a href=\"" . $url . "\">" . $url . "</a>";
+	     	        $text = str_replace( $url , $replace, $text);
+	     	    }
 
-     	    $text = $status->text;
+	     	    $id = $status->id;
+	     	    $time = strtotime($status->created_at);
 
-     	    // check for links
-     	    foreach($status->entities->urls as $l){
-     	        $url = $l->url;
-     	        $replace = "<a href=\"" . $url . "\">" . $url . "</a>";
-     	        $text = str_replace( $url , $replace, $text);
-     	    }
+	            echo "<li>" . $text . "</li>";
+	
+			}
 
-     	    $id = $status->id;
-     	    $time = strtotime($status->created_at);
+    	}
 
-     	    echo "<li>" . $text . " &mdash;  <a href=\"https://twitter.com/intent/retweet?tweet_id=" . $id . "\">" . date("n/j/Y, g:h a", $time)  . "</a></li>";
-     	    
-     	}
+    	echo "</ul></div>";
 
-     	echo "</ul>";
+	}
+	
+	// 4 hour timeout 60*60*4
+	function jr_load_cache($file, $timeout=14400){
+	    
+	   	if(strlen($file) > 0){
 
-     }
+       		if(file_exists($file)){
+
+        		$modified = filemtime($file);
+
+        		if((time() - $timeout) < $modified){
+					$feedContent = file_get_contents($file);
+                    return $feedContent;
+        		} 
+
+        	}
+        }
+        	
+        return false;
+    
+	}
+	
+	function jr_write_cache($cachefile, $content){
+	 
+	    if(strlen($cachefile) > 0){
+  			$file = fopen($cachefile,"w");
+  			fwrite($file,$content);
+  			fclose($file);
+  		}
+	    
+	}
      
 	function jr_load_featured_image(){
 		

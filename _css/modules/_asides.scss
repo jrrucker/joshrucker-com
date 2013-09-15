@@ -1,6 +1,6 @@
 .sidebar-section > h2{
-	margin-bottom: 2em;
-	font-family: $primary-font-family;
+	margin-bottom: 1em;
+	font-family: $display-font-family;
 	font-weight: normal;
 	font-size: 1.6em;
 }
@@ -10,4 +10,21 @@
 	line-height: 1.5em;
 	font-family: $primary-font-family;
 	font-weight: 100;
+}
+
+.sidebar-section a{
+	color: #c00;
+}
+
+.tweet-list > ul{
+	font-size: 1.4em;
+	font-family: $primary-font-family;
+	font-weight: 100;
+	font-style: italic;
+	padding: 0em;
+}
+
+.tweet-list > ul > li{
+	margin-bottom: .5em;
+	list-style: none;
 }
