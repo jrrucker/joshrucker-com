@@ -1,4 +1,3 @@
 - media queries (responsive styles)
-- add twitter to sidebar
 - add comments template
 - favicon
